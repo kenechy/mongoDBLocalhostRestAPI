@@ -1,0 +1,71 @@
+### Post Printingpress
+POST http://localhost:3000/printing
+Content-Type: application/json
+
+{
+    "fullName": "kENCH",
+    "numberOfPrint": 2102,
+    "bill": 1000,
+    "fetchDate": "2023-01-01"
+}
+
+### Get all Printing
+GET http://localhost:3000/printing
+
+### Get Specific Printing by fullName
+GET http://localhost:3000/printing/65f2f097949368be0cf58a61
+
+### Delete employee by its id
+DELETE http://localhost:3000/printing/65f2ef19b7df0bd0c3c790b4
+
+
+### Patch employee by its id
+PATCH http://localhost:3000/printing/65f2f097949368be0cf58a61
+Content-Type: application/json
+
+{
+    "fullName": "Bejec",
+    "numberOfPrint": 1000
+}
+
+
+#################################################
+
+### Post Printingpress Employer
+POST http://localhost:3000/printingEmployer
+Content-Type: application/json
+
+{
+    "firstName": "Nizel",
+    "middleName": "Agravante",
+    "lastName": "Agan",
+    "gender": "Female",
+    "age": 21,
+    "address": "Bugo CDOC",
+    "birthday": "2003-03-28"
+}
+
+### Get all Printing
+GET http://localhost:3000/printingEmployer
+
+### Get Specific Printing by fullName
+GET http://localhost:3000/printingEmployer/65f2f05f949368be0cf58a59
+
+### Delete employee by its id
+DELETE http://localhost:3000/printingEmployer/65f2f05f949368be0cf58a59
+
+
+### Patch employee by its id
+PATCH http://localhost:3000/printingEmployer/
+Content-Type: application/json
+
+{
+    "fullName": "Kench Ralfhael",
+    "numberOfPrint": 2102,
+    "bill": 1000,
+    "fetchDate": "2023-01-01"
+}
+
+
+
+
