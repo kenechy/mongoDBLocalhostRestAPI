@@ -11,10 +11,10 @@ mongoose.connect(url, {})
 .then(result => console.log('Database Connected.....'))
 .catch(err => console.log(err));
 
-const PrintingpressRoute = require('./Route/Printingpress.route');
+const PrintingpressRoute = require('./Routes/Printingpress.route');
 app.use('/printing', PrintingpressRoute);
 
-const PrintingpressEmployerRoute = require('./Route/PrintingpressEmployer.route');
+const PrintingpressEmployerRoute = require('./Routes/PrintingpressEmployer.route');
 app.use('/printingEmployer', PrintingpressEmployerRoute);
 
 app.listen(port, () => {
